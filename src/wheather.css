@@ -1,0 +1,43 @@
+*
+{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+body {
+  background-image: url('arkaplanjs.jpg');
+}
+
+h2 {
+    color: aliceblue;
+}
+
+.sonuc
+{
+    display: flex;
+    min-height: 10vh;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul
+{
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.yazı {
+    color: aliceblue;
+}
+
+h2{
+    margin-left: 20px;
+}

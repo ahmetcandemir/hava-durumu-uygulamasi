@@ -1,0 +1,28 @@
+*
+
+{
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+h1 {
+  color: aliceblue;
+}
+.arama {
+  color: aqua;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid black;
+}
+
+input,button {
+  padding: 0.5rem 1rem;
+  margin-left: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+

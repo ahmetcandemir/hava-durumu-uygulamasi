@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht," initial-scale="1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+
+</head>
+<style>
+    body {
+        background-image: url();
+    }
+
+    img {
+        margin: 5px;
+    }
+
+    h1 {
+        color: black;
+    }
+
+    h4 {
+        color: black;
+    }
+
+    #paragraf {
+        color: black;
+        font-size: 19px;
+    }
+
+    #a {
+        border-radius: 5px;
+    }
+
+</style>
+
+<body>
+
+    <!--Lokal Hava Durumu Uygulaması-->
+    <div class="container border border-info rounded mt-2">
+        <center>
+            <h1>React ile Lokal Hava Durumu Uygulaması</h1>
+        </center>
+        <p id="paragraf">
+            Lokal hava durumu uygulamamda <b>"React"</b> yazılım dilinden yararlanarak, 3 günlük hava durumunu; tarih, havanın nasıl olduğunu gösteren simge, havanın nasıl olduğu ve gündüz/gece sıcaklık değerlerini getirir. <br>
+            Projemdeki değerler İnglizcedir çünkü verileri yabancı bir kaynaktan çekiyor. <br>
+            Projem başka bir bilgisayarda çalışmamaktadır. Çünkü React dilinden yapılan projeye host alınması gerekir bu da ücretli olduğundan sadece fotoğraflar ve video ile sınırlı kalacağım.<br>
+            <a id="" href="https://github.com/ahmetcandemir">GitHub</a> sayfamdan lokal hava durumu projeme bakabilirsiniz.<br>
+            Projemi yaparken ki adımları, React nedir ve nasıl kurulur sorularına aşağıdaki başlıklardan görebilirsiniz.
+        </p>
+    </div>
+    <!--React Nedir-->
+
+    <div class="container border border-info rounded mt-2">
+        <h1>React Nedir ? </h1>
+        <p id="paragraf">React, kullanıcı arayüzleri oluşturmak için açık, verimli ve esnek bir JavaScript kütüphanesidir.
+             Component (bileşen) denilen küçük ve izole parçalar sayesinde karmaşık arayüz birimlerini oluşturmanıza olanak tanır.
+        </p>
+    </div>
+
+    <!--React Nasıl Kurulur-->
+    <div class="container border border-info rounded mt-2">
+        <h1>React Nasıl Kurulur ?</h1>
+        <p id="paragraf">Öncelikle React dilini kullanmamız için <b>Node.js</b> ve <b>npm</b> kurulumunu yapmanız gerekir.
+        </p>
+        <h4>Node.js Kurulumu</h4>
+        <p id="paragraf">
+            Node.js için vermiş olduğum <a href="https://nodejs.org/tr/">linke</a> tıklayarak en güncel versiyonunu indirmeye başlayabilirsiniz.
+        </p>
+        <div class="row border border-white rounded mt-1">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="assets/img/nodejs.png" alt="">
+                <p id="paragraf"><b>1.</b> Karşınıza çıkan iki seçecenekten sol tarafta olana tıklayarak indirme işlemini başlatıyoruz.</p>
+                <p id="paragraf">'node-v18.12.1-x64' isimli indirdiğimiz exe'yi çift tıklayarak çalıştırıyoruz.</p>
+                <br>
+                <img class="img-fluid" src="assets/img/nodejs lisans ekranı.png" alt="">
+                <p id="paragraf"><b>3.</b> "Lisans sözleşmesindeki şartları kabul ediyorum" butununa tik attıktan sonra devam ediyoruz.</p>
+                <img class="img-fluid" src="assets/img/node js özelleştirme ekranı.png" alt="">
+                <p id="paragraf"><b>5.</b> Özelleştirme ekranında neleri kurup neleri kurmayacağınızı kendiniz seçebiliyorsunuz
+                     ama tavsiyem burda değişiklik yapmadan diğer adıma geçmektir.</p>
+                <img class="img-fluid" src="assets/img/nodejs kurulum tamamlandı ekranı.png" alt="">
+                <p id="paragraf"><b>7.</b> Bu ekran geldiyse "Node.js" başarılı bir şekilde kurulmuş demektir.</p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="assets/img/nodejs karşılama ekranı.png" alt="">
+                <p id="paragraf"><b>2.</b> Karşımıza çıkan, karşılama ekranından <b style="color: aqua;">Next</b>'e basarak diğer adıma geçiyoruz</p>
+                <img class="img-fluid" src="assets/img/nodejs dizin seçme.png" alt="">
+                <p id="paragraf"><b>4.</b> Node.js'i bilgisayarımızda nereye kurmak istiyorsak o dizini seçip devam ediyoruz.</p>
+                <img class="img-fluid" src="assets/img/nodejs yükleme ekranı.png" alt="">
+                <p id="paragraf"><b>6.</b> Yükleme neredeyse tamamlanacaktır.</p>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!--NPM ve React App Kurulumu-->
+    <div class="container border border-info rounded mt-2">
+        <h1>NPM ve React App Kurulumu</h1>
+        <p id="paragraf">Visual Studio Code'da React projesi oluşturmamız için <b>terminal</b> ekranını açıyoruz. <br>
+             <b>Ctrl+Shift+"</b> kısayol tuşlarına basarakta açabilirsiniz. <br>
+             Açılan terminal ekranına sırasıyla şu ifadeleri girerek <b>npm</b> ve <b>projenizi</b> kurabilirsiniz. <br>
+             <b>1.</b> npx create-react-app "projeadı-app" <br>
+             - Bu kısımda npm dosyalarını bilgisayarınıza indirilecektir bu yüzden biraz beklemeniz gerekecektir.<br>
+             <b>2.</b> cd "projeadı" <br>
+             <b>3.</b> npm start <br>
+             Bu adımları izleyerek npm ve projenizi kurabilirisiniz. <br>
+        </p>
+    </div>
+
+    <!--Projemi Nasıl Yaptım ?-->
+    <div class="container border border-info rounded mt-2">
+        <h1>Projemin İçeriği ve Yaparken İzlediğim Adımlar</h1>
+        <p id="paragraf">Hava durumu projemin adı <b>DmrWeather</b>'dir. Böyle yapmamın en büyük nedeni hava durumu şirketi gibi davranmak istememdendir.
+            Bu şirket için ayrı bir web sayfası da tasarladım. İsterseniz <a href="dmr.html">DmrWeather</a> şirketi için kurduğum siteye göz gezdirebilirsiniz.
+        </p>
+        <br>
+        <div class="row border border-info rounded mt-1">
+            <h1>Proje Başlarken</h1>
+            <p id="paragraf">Projeme başlarken yukarıda belirttiğim <b>npm ve React</b> kurulumunda vermiş olduğum 
+                3 adımlık kodları yeni terminal açarak projemi oluşturdum. <br>
+                App.js adında proje oluşturduktan sonra verileri girmek için arama sekmesini ve buton ekledim. 
+                Bunları <b>Function App() {...}</b> köşeli parantezlerin içine yazarak ekrana yazdırdım.
+            </p>
+        </div>
+        <div class="row border border-info rounded mt-1">
+            <h1>Arama Kısmı</h1>
+            <p id="paragraf">App.js projeme "arama" adında bir div oluşturarak içine verilerin girileceği bir arama yani input oluşturdum.
+                Imputumu oluşturduktan sonra <b>onChange</b> ile her veri girişinde değer atamak için <b>cityText</b> adında bir fonksiyon oluşturdum.
+                Genel olarak oluşturduğum App fonksiyonun için cityText adında yen bir fonksiyon oluşturarak değerleri alabildim. 
+                Fonksiyonun için event oluşturarak her tuşa bastığımızda değeri inputtan alarak city değerinin içine koyuyor. Girilen değerleri kaybetmemek için 
+                <b>wheather</b> ve <b>setwheatherdata</b> parametrelerini <b>useState </b> kullanarak oluşturdum. Arama kısmına girilen her değeri alabilmek için 
+                <code>cityinput = e.target.value;</code> kodunu yazdım. Girilen şehrin veya ülkenin hava durumunu alabilmek adına <a href="https://www.weatherapi.com/my/">https://www.weatherapi.com/my/</a>
+                 sitesinden aldığım kendi <b>Api Key</b>'imi sabit değer olan <code>const APP_KEY ='kendi api keyiniz' </code> girerek veri aldım. Bu uygulama da 
+                 3 günlük hava durumu alındığından kaynaklı verileri almak için <b>fetch</b> kullanarak sağlamış oluyorum. Tarih, hava durumunu, hava durumu simgesini, min ve max sıcaklıklarını
+                 alabilmek için <b>setwheatherdata</b> parametresini kullandım. Alacağım değerler, props etmek için <code>setwheatherdata(result.forecast.forecastday)</code> kodunu kullandım.
+                useState ve wheatherdata'ın map'ini alarak sonuç kısmına bağlamak için aşağıdaki kod bloğunu kullanmamız gerekiyor.
+                <img src="assets/img/kodbloğu.png" alt="" class="img-fluid">
+                <br>
+                Arama kısmı için yaptığım adımları dilim döndüğünce anlatmaya çalıştım. Tüm kod satırı aşağıdaki gibidir. <br>
+                <code>
+                    import React, {useState} from "react" <br>
+                    import Wheather from './Wheatherresult.js'; <br>
+                    import './App.css'; <br>
+                    import { getDefaultNormalizer } from '@testing-library/react'<br>
+                    <br>
+                    <br>
+                    function App() { <br>
+                        const APP_KEY = "8c57bb143297421981a10526221412"<br>
+                        let cityinput=""<br>
+                        const [wheatherdata, setwheatherdata]=useState([])<br>
+                        function citytext()<br>
+                        {<br>
+                            document.querySelector("input").addEventListener("input", (e) => {<br>
+                                e.preventDefault();<br>
+                                cityinput = e.target.value;<br>
+                                console.log(cityinput)<br>
+                            })<br>
+                        }<br>
+                    async function getdata(value)<br>
+                        {                 <br>    
+                            const data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${APP_KEY}&q=${value}&days=3`)<br>
+                            const result = await data.json();<br>
+                            //console.log(result)//<br>
+                            setwheatherdata(result.forecast.forecastday)<br>
+                            console.log(result.forecast.forecastday)<br>
+                        }<br>
+                        return (<br>
+                            < div><br>
+                                < div className="arama"><br>
+                                    < input type="text" placeholder="Şehrinizi Girin" onChange={citytext}/><br>
+                                < button onClick={ ()  => getdata(cityinput)}>Arayın</ button><br>
+                            < /div><br>
+                                < center>< h1>TarihHava DurumuGündüz / Gece< /h1>< /center><br>
+                                < hr/><br>
+                                {wheatherdata.map(item=>(< Wheather key={item.date} date={item.date} mintemp={item.day.mintemp_c} <br>
+                                maxtemp={item.day.maxtemp_c} condition={item.day.condition.text} icon={item.day.condition.icon}/>))}<br>
+                            < /div><br>
+                        );<br>
+                        }<br>
+                        <br>
+                    export default App;<br>
+                </code>
+            </p>
+        </div>
+        <div class="row border border-info rounded mt-1">
+            <h1>Sonuç Kısmı</h1>
+            <p id="paragraf">Şehir veya Ülke adını girdikten sonra 3 günlük hava durumunu göstermesi için ayrı bir app kurdum.
+                Bunun adına da Wheatherresult.js adını verdim. Arama kısmındandan gelecek olan tarih, min sıcaklık, max sıcaklık, hava durumu ve simge çekmek için ve 
+                kullanabilmek adına <b>Wheatherresult</b> adında bir fonksiyon oluşturdum. Bu gelecek olan değerler yabancı kaynaktan geldiği için ingilizce bir şekilde fonksiyonun içine yerleştirdim.
+                Arama fonksiyonunun bu Wheatherresult fonksiyonuna ulaşabilmesi için de Arama kısmına <code>import Wheatherresult from 'Wheatherresult.js</code> kodunu yazdım.
+                <img class="img-fluid" src="assets/img/sonuçkodları.png" alt="">
+                <code>
+                    import React from 'react' <br>
+                    import './wheather.css'<br>
+                    import './arkaplanjs.jpg'<br>
+
+                    function Wheatherresult({date,mintemp,maxtemp,condition,icon}) {<br>
+                    return (<br>
+                        < div className="sonuc"><br>
+                            < h2>{date}< /h2><br>
+                            < ul><br>
+                                < li>< img src={icon} alt=""/>< /li><br>
+                                < li className='yazı'>{condition}< /li><br>
+                                < li className='yazı'>{maxtemp } C / {mintemp} C< /li><br>
+                            < /ul><br>
+                         < /div><br>
+                         )<br>
+                    }<br>
+
+                    export default Wheatherresult<br>
+
+
+                </code>
+            </p>
+        </div>
+        <div class="row border border-info rounded mt-1">
+            <div class="col-lg-6">
+                <h1>Projemizin Videosu</h1>
+                <iframe src="assets/img/uygulamavideo.mp4" frameborder="0"></iframe>
+                <p id="paragraf">Gördüğünüz gibi projemiz çalışıyor. <br>
+                Arama kısmına şehir veya Ülke yazabilirsiniz.</p>
+            </div>
+            <div class="col-lg-6">
+                <h1>DmrWeather Şirket Videosu</h1>
+                <iframe src="assets/img/dmrweathersite.mp4" frameborder="0"></iframe>
+                <p id="paragraf">Bu sitede tıkladığımda hata aldığım yer hava durumu uygulamam yani <b>App.js</b> adındaki projem ancak domein alınmadığı takdirde 
+                react html ile entegre olamıyor ve programı açmıyor. Böyle bir şeyi yapamadım yapsaydım tıkladığım gibi direkt hava durumu uygulamam açılacaktı
+                ama iş sadece görselde kaldı. Projemin çalıştığına ait video tanıtımda mevcut.
+                <a href="dmr.html">Şirket Sitesi</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="bg-dark p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-info">
+                    <h5>Hakkımda</h5>
+                    <hr class="border-light">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="https://github.com/ahmetcandemir?tab=repositories" class="nav-link pl-0 text-white">Ahmet Can Demir</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/ahmetcandemir?tab=repositories" class="nav-link pl-0 text-white">21430070026</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link pl-0 text-white">Bilişim Sistemleri ve Teknolojileri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="dmr.html" class="nav-link pl-0 text-white">İnternet Programcılığı</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-info">
+                    <h5>Konu Başlıkları</h5>
+                    <hr class="border-light">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link pl-0 text-white">Hava Durumu Uygulaması</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link pl-0 text-white">React Nedir ve Nasıl Kurulur ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link pl-0 text-white">Projemi Nasıl Yaptığım</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link pl-0 text-white">Proje Videosu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html> 
